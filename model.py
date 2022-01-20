@@ -41,7 +41,7 @@ print('Classification Report (SVM):')
 print(classification_report(y_test, y_pred_svm))
 
 # Build a Decision Tree model, train it, and test it by predicting the test data.
-decision_tree = DecisionTreeClassifier(criterion='entropy', max_depth=5)
+decision_tree = DecisionTreeClassifier(criterion='entropy', max_depth=10)
 decision_tree.fit(X_train, y_train).predict(X_test)
 y_pred_decision_tree = decision_tree.predict(X_test)
 
